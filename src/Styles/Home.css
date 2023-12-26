@@ -1,0 +1,177 @@
+.Wrapper
+{
+    max-width: 1200px;
+}
+
+.Home_Hero
+{
+    border-bottom: 1px solid #4a5a69;
+}
+
+.Introduction
+{
+    display: flex;
+    padding-top: 180px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.Introduction img
+{
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Actions
+{
+    display: flex;
+    padding-bottom: 110px;
+    gap: 50px;
+}
+
+.Actions .Action
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+.Actions .Action span
+{
+    color: #4a5a69;
+    font-size: 1rem;
+}
+
+.Actions a,.Actions a:active
+{
+    text-decoration: none;
+    color: #ac3232;
+}
+
+.Actions svg
+{
+    cursor: pointer;
+}
+
+.IntroText
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    gap: 50px;
+    color: #4a5a69;
+}
+
+.IntroText h1
+{
+    margin: 0;
+    font-size: 6rem;
+    text-transform: uppercase;
+
+}
+
+.IntroText p
+{
+    margin: 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: lighter;
+    letter-spacing: 3.2px;
+}
+
+.IntroText b
+{
+    text-transform: uppercase;
+    color: #637586;
+}
+
+.TextField
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.TextField h1
+{
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ac3232;
+}
+
+.TextField p
+{
+    letter-spacing: 1.3px;
+    color: #4a5a69;
+}
+
+.Skills_Container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Skill_Slot
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.Skill_Slot svg
+{
+    padding-left: 20px;
+    font-size: 5rem;
+    color: #ac3232;
+}
+
+.Skill_Slot_Content
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.Skill_Slot h2
+{
+    margin: 0;
+    text-transform: uppercase;
+    color: #637586;
+}
+
+.Skill_Slot span
+{
+    margin: 0;
+    text-transform: capitalize;
+    color: #637586;
+}
+
+.Skill_Slot_Additional_Icons
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Skill_Slot_Additional_Icons svg
+{
+    font-size: 1.2rem;
+}
