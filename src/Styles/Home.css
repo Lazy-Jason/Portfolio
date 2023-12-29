@@ -1,5 +1,6 @@
 .Wrapper
 {
+    width: 100%;
     max-width: 1200px;
 }
 
@@ -44,7 +45,7 @@
 
 .Actions .Action span
 {
-    color: #4a5a69;
+    color: #9d9aaa;
     font-size: 1rem;
 }
 
@@ -67,7 +68,7 @@
     justify-content: center;
     width: 60%;
     gap: 50px;
-    color: #4a5a69;
+    color: #9d9aaa;
 }
 
 .IntroText h1
@@ -90,7 +91,7 @@
 .IntroText b
 {
     text-transform: uppercase;
-    color: #637586;
+    color: #9d9aaa;
 }
 
 .TextField
@@ -112,7 +113,7 @@
 .TextField p
 {
     letter-spacing: 1.3px;
-    color: #4a5a69;
+    color: #9d9aaa;
 }
 
 .Skills_Container
@@ -153,14 +154,14 @@
 {
     margin: 0;
     text-transform: uppercase;
-    color: #637586;
+    color: #9d9aaa;
 }
 
 .Skill_Slot span
 {
     margin: 0;
     text-transform: capitalize;
-    color: #637586;
+    color: #9d9aaa;
 }
 
 .Skill_Slot_Additional_Icons
@@ -174,4 +175,64 @@
 .Skill_Slot_Additional_Icons svg
 {
     font-size: 1.2rem;
+}
+
+.Project_Conatiner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Project_Overlay
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,black,#00000000);
+}
+
+.Project_Content
+{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    height: 40%;
+}
+
+.Project_Content_Info
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.Project_Content_Info h2
+{
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #9d9aaa;
+}
+
+.Project_Content_Info p
+{
+    margin: 0;
+}
+
+.Project_Content .ActionButton
+{
+    margin-bottom: 20px;
+    width: 14%;
+    height: 50px;
 }

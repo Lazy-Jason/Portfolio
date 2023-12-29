@@ -1,0 +1,19 @@
+.ActionButton
+{
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: transparent;
+    border: transparent;
+    font-weight: lighter;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    border-radius: 2px;
+    color: white;
+    background-color: #ac3232;
+}
+
+.ActionButton:hover
+{
+    color: #ac3232;
+    background-color: white;
+}

@@ -15,13 +15,13 @@ header
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .NavBar
 {
     display: flex;
-    gap: 1.5rem;
+    gap: 5rem;
     font-size: 1.3rem;
 }
 
@@ -37,11 +37,11 @@ header
     monospace;
     text-transform: uppercase;
     text-decoration: none;
-    color: #4a5a69;
+    color: #9d9aaa;
 
 }
 
 .NavBar a:hover
 {
-    border-bottom: 2px solid #ac3232;
+    border-bottom: 1px solid #ac3232;
 }
