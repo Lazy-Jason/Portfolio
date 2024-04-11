@@ -19,25 +19,65 @@ export default function Home()
                 SkillIcon: SiUnrealengine,
                 SkillName: "Unreal Engine",
                 SkillDescription: "2+ Years Of Development Using Blueprints And C++",
-                SkillAdditionalIcons:[SiCplusplus]
+                SkillAdditionalIcons:
+                [{
+                    title: "CPlus-Plus",
+                    icon: SiCplusplus
+                }]
             },
             {
                 SkillIcon: SiUnity,
                 SkillName: "Unity",
                 SkillDescription: "Developed Several University Project Games Using C#",
-                SkillAdditionalIcons:[SiCsharp]
+                SkillAdditionalIcons:
+                [{
+                    title: "CSharp",
+                    icon: SiCsharp
+                }]
             },
             {
                 SkillIcon: SiJavascript,
                 SkillName: "Web_Development",
                 SkillDescription: "Developed an anime ranking site using nodejs, react and firebase",
-                SkillAdditionalIcons:[SiCss3, SiHtml5, SiReact, SiNodedotjs,SiFirebase]
+                SkillAdditionalIcons:
+                [
+                    {
+                        title: "CSS3",
+                        icon: SiCss3
+                    },
+                    {
+                        title: "HTML5",
+                        icon: SiHtml5
+                    },
+                    {
+                        title: "React",
+                        icon: SiReact
+                    },
+                    {
+                        title: "Node.js",
+                        icon: SiNodedotjs
+                    },
+                    {
+                        title: "Firebase",
+                        icon: SiFirebase
+                    }
+                ]                
             },
             {
                 SkillIcon: SiGit,
                 SkillName: "Agile Practitioner",
                 SkillDescription: " Proficient in agile methodologies, ensuring streamlined workflows and effective collaboration",
-                SkillAdditionalIcons:[SiGithub, SiGitlab]
+                SkillAdditionalIcons:
+                [
+                    {
+                        title: "GitHub",
+                        icon: SiGithub
+                    },
+                    {
+                        title: "GitLab",
+                        icon: SiGitlab
+                    }
+                ]                
             }
         ]
     }
@@ -87,30 +127,32 @@ export default function Home()
                         <div className='Introduction'>
                             <div className='IntroText'>
                                 <h1>Hey there!</h1>
-                                <p>I'm <b>job Omondiale</b>, a gameplay and UI programmer with a deep love for all things gaming. Join me as I bring code to life, creating immersive experiences for players.</p>
+                                <p>My name is <b>job Omondiale</b>, a gameplay and UI programmer with a deep love for all things gaming. 
+                                Join me as I bring code to life, creating immersive experiences for players.
+                                </p>
+                                <div className='Actions'>
+                                    <a target='blank' href='mailto:huntingj4@gmail.com?' subject='Hello'>
+                                        <ActionIcon Icon={MdEmail} Message={'Email'} />
+                                    </a>
+                                    <a target='blank' href='https://github.com/jasonG006'>
+                                        <ActionIcon Icon={FaGithub} Message={'GitHub'} />
+                                    </a>
+                                    <a target='blank' href='https://www.linkedin.com/in/your-linkedin-profile'>
+                                        <ActionIcon Icon={FaLinkedin} Message={'LinkedIn'} />
+                                    </a>
+                                    <a target='blank' href='https://lazy-studio.itch.io'>
+                                        <ActionIcon Icon={FaItchIo} Message={'Itch.io'} />
+                                    </a>
+                                </div>
                             </div>
                             <img src='https://www.xtrafondos.com/wallpapers/goku-dragon-ball-super-ultra-instinct-10897.jpg' alt=''/>
-                        </div>
-                        <div className='Actions'>
-                            <a target='blank' href='mailto:huntingj4@gmail.com?' subject='Hello'>
-                                <ActionIcon Icon={MdEmail} Message={'Email'} />
-                            </a>
-                            <a target='blank' href='https://github.com/jasonG006'>
-                                <ActionIcon Icon={FaGithub} Message={'GitHub'} />
-                            </a>
-                            <a target='blank' href='https://www.linkedin.com/in/your-linkedin-profile'>
-                                <ActionIcon Icon={FaLinkedin} Message={'LinkedIn'} />
-                            </a>
-                            <a target='blank' href='https://lazy-studio.itch.io'>
-                                <ActionIcon Icon={FaItchIo} Message={'Itch.io'} />
-                            </a>
                         </div>
                     </div>
                 </section>
                 <section id='Background'>
                     <TextField Title={"Background"} Message={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."} />
                 </section>
-                <section id='Skills'>
+                <section className='Skill' id='Skills'>
                     <SkillsTree Title={"Skills"} AllSkills={AllSkills()} />
                 </section>
                 <section id='Projects'>

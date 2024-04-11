@@ -13,3 +13,36 @@ body
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root
+{
+  --Max-width: 1600px;
+  --Primary-Text-Color: #9d9aaa;
+  --Secondary-Text-Color: #eb4848;
+  --CallToAction-Color: #eb4848;
+  --Primary-Outline-Color: #353240;
+  --Secondary-Outline-Color: #9d9aaa;
+  --Primary-Section-Color: #0f1016;
+  --Background-Color: #15161b;
+}
+
+.css-1k51tf5-MuiTooltip-tooltip 
+{
+  display: grid;
+  place-content: center;
+  font-size: 0.8rem !important;
+  border-radius: 5px !important;
+  min-height: 30px;
+  color: var(--Primary-Text-Color) !important;
+  background-color: var(--Primary-Outline-Color) !important;
+}
+
+.css-kudwh-MuiTooltip-arrow
+{
+  color: var(--Primary-Outline-Color) !important;
+}
+
+/* .MuiTooltip-popper[data-popper-placement*="bottom"] .css-1k51tf5-MuiTooltip-tooltip
+{
+  
+} */
