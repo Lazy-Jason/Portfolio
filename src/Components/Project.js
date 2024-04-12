@@ -1,7 +1,7 @@
 import React from 'react'
 import ActionButton from './ActionButton'
 
-export default function Project({ProjectInfo = {}, Id, OnProjectClicked})
+const CollumView = ({ProjectInfo = {}, Id, OnProjectClicked}) =>
 {
     const HandleClicked = () =>
     {
@@ -21,4 +21,46 @@ export default function Project({ProjectInfo = {}, Id, OnProjectClicked})
             </div>
         </div>
     )
+}
+
+const AlternativeView = ({ProjectInfo = {}, Id, OnProjectClicked}) =>
+{
+    const HandleClicked = () =>
+    {
+        OnProjectClicked && OnProjectClicked(Id)
+    }
+
+    const IsOdd = Id % 2;
+
+    console.log(ProjectInfo)
+    return(
+        <div className='Alternate_Wrapper'>
+            {IsOdd?
+            (
+            <>
+                <div className='Alternate_Thumbnail' style ={{ backgroundImage: `url("${ProjectInfo.ProjectThumbnail}")` }} />
+                <div className='Alternate_Content'>
+                    <h1>{ProjectInfo.ProjectTitle}</h1>
+                    <p>{ProjectInfo.ProjectShortDescription}</p>
+                    <ActionButton Message = {"View"} FontSize={1.5} OnClicked={HandleClicked}/>
+                </div>
+            </>
+            ) : (
+            <>
+                <div className='Alternate_Content'>
+                    <h1>{ProjectInfo.ProjectTitle}</h1>
+                    <p>{ProjectInfo.ProjectShortDescription}</p>
+                    <ActionButton Message = {"View"} FontSize={1.5} OnClicked={HandleClicked}/>
+                </div>
+                <div className='Alternate_Thumbnail' style ={{ backgroundImage: `url("${ProjectInfo.ProjectThumbnail}")` }} />
+            </>
+            )}
+        </div>
+    )
+}
+
+export
+{
+    CollumView,
+    AlternativeView
 }
