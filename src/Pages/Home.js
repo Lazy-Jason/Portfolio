@@ -9,6 +9,7 @@ import TextField from '../Components/TextField';
 import SkillsTree from '../Components/SkillsTree';
 import "../Styles/Home.css"
 import ProjectField from '../Components/ProjectField';
+import Dialogue from '../Components/Dialogue/Dialogue';
 
 export default function Home()
 {
@@ -86,6 +87,19 @@ export default function Home()
     {
         return[
             {
+                ProjectTitle: "MIQUELLA'S END",
+                ProjectThumbnail: "https://img.itch.zone/aW1nLzE1MjA0MDMxLnBuZw==/original/agPKs6.png",
+                ProjectTags: ["3d", "Souls-Like"],
+                ProjectShortDescription: "Miquella's End draws inspiration from the 2022 Game of the Year, Elden Ring, particularly focusing on the challenging boss fight featuring Malenia, Blade of Miquella.",
+                ProjectFullDescription: "",
+                ProjectOverview: "",
+                TechnicalDetails: `None at the moment`,
+                Learnings: "",
+                FuturePlans: "",
+                ProjectShowcaseVideo:"",
+                ProjectExternalLink: "https://lazy-studio.itch.io/miquellas-end",
+            },
+            {
                 ProjectTitle: "Into The Gaol",
                 ProjectThumbnail: "https://img.itch.zone/aW1hZ2UvMjA0OTQ4OS8xMjIzMDE2Ni5qcGc=/original/vFBSmT.jpg",
                 ProjectTags: ["2d", "Co-op", "Creepy", "Indie", "Pixel Art", "Puzzle", "Unity"],
@@ -119,6 +133,38 @@ export default function Home()
             },
         ]
     }
+
+    const QuestionAnswersArray =
+    [
+        {
+          question: "What is your name",
+          answer: "My name is Job Omondiale."
+        },
+        {
+          question: "When were you born",
+          answer: "I was born in Benin City Nigeria, May 29th 2003."
+        },
+        {
+          question: "What do you know about OPP",
+          answer: "Object Oriented Programming, or better yet OPP, is a programming principle of limiting the interaction of various parts of a program to a defined set of interfaces, and employing the concept of encapsulation, inheritance, and polymorphism to enhance code reusability, maintainability, and scalability. It emphasizes the organization of code into manageable, self-contained objects that interact with each other to accomplish tasks. OPP enables developers to model real-world entities and their behaviors in a software system, making it easier to understand and maintain complex systems."
+        },
+        {
+          question: "Where did you go to university",
+          answer: "I didn't attend university as I am an artificial intelligence."
+        },
+        {
+          question: "What is your favorite project",
+          answer: "I don't have personal preferences as I am a machine learning model."
+        },
+        {
+          question: "What is your most valuable skill",
+          answer: "I'm proficient in understanding and generating human-like text."
+        },
+        {
+          question: "What do you do for fun (Hobbies)",
+          answer: "I enjoy helping users and learning new things!"
+        }
+    ]
     return (
         <>
             <div className='Wrapper'>
@@ -151,12 +197,16 @@ export default function Home()
                 </section>
                 <section id='Background'>
                     <TextField Title={"Background"} Message={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."} />
+                    <Dialogue Options={QuestionAnswersArray} Speaker='Job Omondiale'/>
                 </section>
                 <section className='Skill' id='Skills'>
                     <SkillsTree Title={"Skills"} AllSkills={AllSkills()} />
                 </section>
                 <section id='Projects'>
                     <ProjectField Title={"Featured Projects"} Projects = {AllProjects()} />
+                </section>
+                <section id='Contact'>
+                    
                 </section>
             </div>
         </>

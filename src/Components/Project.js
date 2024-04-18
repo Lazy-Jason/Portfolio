@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaEye } from "react-icons/fa";
 import ActionButton from './ActionButton'
 
 const CollumView = ({ProjectInfo = {}, Id, OnProjectClicked}) =>
@@ -42,7 +43,7 @@ const AlternativeView = ({ProjectInfo = {}, Id, OnProjectClicked}) =>
                 <div className='Alternate_Content'>
                     <h1>{ProjectInfo.ProjectTitle}</h1>
                     <p>{ProjectInfo.ProjectShortDescription}</p>
-                    <ActionButton Message = {"View"} FontSize={1.5} OnClicked={HandleClicked}/>
+                    <ActionButton Icon={<FaEye />} Message = {"View"} FontSize={1.5} OnClicked={HandleClicked}/>
                 </div>
             </>
             ) : (
@@ -50,7 +51,7 @@ const AlternativeView = ({ProjectInfo = {}, Id, OnProjectClicked}) =>
                 <div className='Alternate_Content'>
                     <h1>{ProjectInfo.ProjectTitle}</h1>
                     <p>{ProjectInfo.ProjectShortDescription}</p>
-                    <ActionButton Message = {"View"} FontSize={1.5} OnClicked={HandleClicked}/>
+                    <ActionButton Icon={<FaEye />} Message = {"View"} FontSize={1.5} OnClicked={HandleClicked}/>
                 </div>
                 <div className='Alternate_Thumbnail' style ={{ backgroundImage: `url("${ProjectInfo.ProjectThumbnail}")` }} />
             </>

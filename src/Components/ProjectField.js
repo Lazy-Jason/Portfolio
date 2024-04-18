@@ -35,9 +35,9 @@ export default function ProjectField({Title, Projects = []})
     {
         switch (currentViewIndex)
         {
-            case 1:
+            case 0:
                 return ProjectCollumView();
-            case 2:
+            case 1:
                 return ProjectAlternativeView();
             default:
                 return null;

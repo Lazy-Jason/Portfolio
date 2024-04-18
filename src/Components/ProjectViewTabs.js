@@ -11,10 +11,10 @@ export default function ProjectViewTabs({onTabSelected})
     const ProjectViews = () =>
     {
         return(
-        [{
-            Title: "Grid View",
-            Icon: <IoGrid />,
-        },
+        [// {
+        //     Title: "Grid View",
+        //     Icon: <IoGrid />,
+        // },
         {
             Title: "Collum View",
             Icon: <PiRowsFill />,

@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Styles/Button.css"
 
-export default function ActionButton({Message, FontSize = 1.5, OnClicked, Link})
+export default function ActionButton({Icon, Message, FontSize = 1.5, OnClicked, Link})
 {
   const HandleClicked = () =>
   {
@@ -10,7 +10,8 @@ export default function ActionButton({Message, FontSize = 1.5, OnClicked, Link})
   
   return(
     <button className='ActionButton' style={{ fontSize: `${FontSize}rem`}} onClick={HandleClicked}>
-        {Message && Message}
+      {Icon}
+      {Message && Message}
     </button>
   )
 }
