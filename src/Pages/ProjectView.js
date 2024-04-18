@@ -1,11 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Tooltip } from "@mui/material"
+import { FaBinoculars } from "react-icons/fa6"
 import { useLocation } from 'react-router-dom'
+import { PiKeyReturnFill } from "react-icons/pi"
 import ActionButton from '../Components/ActionButton'
+import TextField from '../Components/TextField'
 import "../Styles/ProjectView.css"
 
 export default function ProjectView()
 {
     const { state } = useLocation()
+    const navigate = useNavigate()
 
     if (!state || !state.ProjectInfo)
     {
@@ -21,69 +27,53 @@ export default function ProjectView()
 
     return (
         <div className='ProjectInfo_Container'>
-            <div className='ProjectInfo_Hero' style ={{ backgroundImage: `url("${ProjectInfo.ProjectThumbnail}")` }}>
+            <Tooltip title={"Return"} arrow> 
+                <div className='Return_Button' onClick={() => navigate('/')}>
+                    <PiKeyReturnFill />
+                </div>
+            </Tooltip>
+            <div className='Project_Conatiner' style ={{ backgroundImage: `url("${ProjectInfo.ProjectThumbnail}")` }}>
                 <div className='Project_Overlay'>
                 <div className='Project_Content'>
                     <div className='Project_Content_Info'>
-                        <h1>{ProjectInfo && ProjectInfo.ProjectTitle}</h1>
+                        <h2>{ProjectInfo && ProjectInfo.ProjectTitle}</h2>
+                        {ProjectInfo.ProjectTags &&
+                            <div className='All_Tags'>
+                                {ProjectInfo.ProjectTags && ProjectInfo.ProjectTags.map((Element, Id) =>
+                                {
+                                    return (<span className='Tag' id={Id}>{Element}</span>)
+                                })}
+                            </div>
+                        }
                     </div>
-                    {ProjectInfo.ProjectExternalLink && <ActionButton Message={"Check Out"} FontSize={1.2} OnClicked={OpenExternalLink} Link = {ProjectInfo.ProjectExternalLink}/>}
+                    {ProjectInfo.ProjectExternalLink && <ActionButton Icon={<FaBinoculars />} Message={"Check Out"} FontSize={1.2} OnClicked={OpenExternalLink} Link = {ProjectInfo.ProjectExternalLink}/>}
                 </div>
                 </div>
             </div>
             <div className='ProjectInfo_Contents'>
-                {ProjectInfo.ProjectOverview &&
-                    <div className='Content_Box'>
-                        <h1>Project Overview</h1>
-                        <p dangerouslySetInnerHTML={{ __html: ProjectInfo.ProjectOverview}} />
-                        <span>{`For a hands-on experience, feel free to explore ${ProjectInfo.ProjectTitle} on `}<a href= {ProjectInfo.ProjectExternalLink && ProjectInfo.ProjectExternalLink} target='blank'>itch.io</a></span>
-                    </div>
-                }
-                {ProjectInfo.ProjectRole &&
-                    <div className='Content_Box'>
-                        <h1>My Role</h1>
-                        <p dangerouslySetInnerHTML={{ __html: ProjectInfo.ProjectRole}} />
-                    </div>
-                }
-                {ProjectInfo.TechnicalDetails &&
-                <div className='Content_Box'>
-                    <h1>Technical Details</h1>
-                    <p dangerouslySetInnerHTML={{ __html: ProjectInfo.TechnicalDetails }}/>
-                </div>
-                }
-                {ProjectInfo.Collaboration &&
-                <div className='Content_Box'>
-                    <h1>Collaboration</h1>
-                    <p dangerouslySetInnerHTML={{ __html: ProjectInfo.Collaboration}} />
-                </div>
-                }
-                {ProjectInfo.Learnings &&
-                    <div className='Content_Box'>
-                        <h1>Learnings</h1>
-                        <p dangerouslySetInnerHTML={{ __html: ProjectInfo.Learnings}} />
-                    </div>
-                }
-                {ProjectInfo.FuturePlans &&
-                    <div className='Content_Box'>
-                        <h1>Future Plans</h1>
-                        <p dangerouslySetInnerHTML={{ __html: ProjectInfo.FuturePlans}} />
-                    </div>
-                }
                 {ProjectInfo.ProjectShowcaseVideo &&
                     <div className='Content_Box'>
-                        <h1>Showcase</h1>
+                        <h1>Showcase Video</h1>
                         <iframe title="Project Showcase Video" src={ProjectInfo.ProjectShowcaseVideo} frameBorder="0" allowFullScreen/>
                     </div>
                 }
-                {ProjectInfo.ProjectTags &&
-                    <div className='Content_Box'>
-                        <h1>Tags</h1>
-                        <div className='All_Tags'>{ProjectInfo.ProjectTags &&
-                        ProjectInfo.ProjectTags.map((Element, Id) =>
-                        {
-                            return (<span className='Tags' id={Id}>{Element}</span>)
-                        })}</div>
-                    </div>
+                {ProjectInfo.ProjectOverview &&
+                    <TextField Title={"Project Overview"} Message={ProjectInfo.ProjectOverview}/>
+                }
+                {ProjectInfo.ProjectRole &&
+                    <TextField Title={"My Role"} Message={ProjectInfo.ProjectRole}/>
+                }
+                {ProjectInfo.TechnicalDetails &&
+                    <TextField Title={"Technical Details"} Message={ProjectInfo.TechnicalDetails}/>
+                }
+                {ProjectInfo.Collaboration &&
+                    <TextField Title={"Collaboration"} Message={ProjectInfo.Collaboration}/>
+                }
+                {ProjectInfo.Learnings &&
+                    <TextField Title={"Learnings"} Message={ProjectInfo.Learnings}/>
+                }
+                {ProjectInfo.FuturePlans &&
+                    <TextField Title={"Future Plans"} Message={ProjectInfo.FuturePlans}/>
                 }
             </div>
         </div>

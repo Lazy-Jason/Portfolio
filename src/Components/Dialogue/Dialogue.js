@@ -58,7 +58,7 @@ export default function Dialogue({Options = [{}], Speaker =""})
           <div className='Dialogue-Content_Area'>
             <ReactTyped ref={typeWriterRef} strings={[Answer || "Ask me something..."]} typeSpeed={30} backSpeed={30} loop={false}/>
             <form  onSubmit={HandleSubmittion} className='Dialogue-Pesponse-Box'>
-              <DropDown getInputValue={(e) => setQuestion(e)} title={"Ask a queston"} children={Questions.length> 0 ? Questions : ["This is the default message if Options are not avaliable"]}/>
+              <DropDown getInputValue={(e) => setQuestion(e)} title={"Pick a queston"} children={Questions.length> 0 ? Questions : ["This is the default message if Options are not avaliable"]}/>
               <ActionButton Message={"Ask"} />
             </form>
           </div>

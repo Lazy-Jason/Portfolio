@@ -7,9 +7,9 @@ import { MdEmail } from "react-icons/md";
 import ActionIcon from '../Components/ActionIcon';
 import TextField from '../Components/TextField';
 import SkillsTree from '../Components/SkillsTree';
-import "../Styles/Home.css"
 import ProjectField from '../Components/ProjectField';
 import Dialogue from '../Components/Dialogue/Dialogue';
+import "../Styles/Home.css"
 
 export default function Home()
 {
@@ -19,7 +19,7 @@ export default function Home()
             {
                 SkillIcon: SiUnrealengine,
                 SkillName: "Unreal Engine",
-                SkillDescription: "2+ Years Of Development Using Blueprints And C++",
+                SkillDescription: `${new Date().getFullYear() - 2022}+ Years Of Development Using Blueprints And C++`,
                 SkillAdditionalIcons:
                 [{
                     title: "CPlus-Plus",
@@ -92,11 +92,15 @@ export default function Home()
                 ProjectTags: ["3d", "Souls-Like"],
                 ProjectShortDescription: "Miquella's End draws inspiration from the 2022 Game of the Year, Elden Ring, particularly focusing on the challenging boss fight featuring Malenia, Blade of Miquella.",
                 ProjectFullDescription: "",
-                ProjectOverview: "",
-                TechnicalDetails: `None at the moment`,
+                ProjectOverview: 'Miquella\'s End draws inspiration from the 2022 Game of the Year, Elden Ring, particularly focusing on the challenging boss fight featuring Malenia, Blade of Miquella. In this project,'
+                +' I aimed to recreate the intricate dodging mechanics and diverse attack patterns of the boss, including her distinctive ability to regenerate health after successfully landing hits on the player.'
+                +'Several elements were incorporated to emulate the intensity of a boss fight, such as an additional stage with unique spells wielded by the boss, the integration of mini cutscenes to depict the entrance'
+                +' and transition to the second stage of the battle, the introduction of Ash of War for the player, a combat combo system, and a leveling system.'
+                +'Despite the inclusion of these features, refining the boss further proved challenging, and I wasn\'t able to achieve the desired level of sophistication with additional attack animations and spell variations as much as I had envisioned.',
+                TechnicalDetails: "",
                 Learnings: "",
                 FuturePlans: "",
-                ProjectShowcaseVideo:"",
+                ProjectShowcaseVideo:"https://drive.google.com/file/d/1XJAyaX3MvbvMa8J6b7tPz6NUcPEgB7eW/preview",
                 ProjectExternalLink: "https://lazy-studio.itch.io/miquellas-end",
             },
             {
@@ -167,6 +171,15 @@ export default function Home()
     ]
     return (
         <>
+            <header>
+                <nav className="NavBar">
+                    <a href="#Home">Home</a>
+                    <a href="#Background">Background</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
+                </nav>
+            </header>
             <div className='Wrapper'>
                 <section id='Home'>
                     <div className='Home_Hero'>
