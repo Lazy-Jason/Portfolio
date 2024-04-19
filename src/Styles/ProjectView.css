@@ -8,6 +8,18 @@
     min-height: 100vh;
 }
 
+.ProjectInfo_Container .Project_Conatiner .Project_Content
+{
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.Project_Conatiner .Project_Content .ActionButton
+{
+    pointer-events: all;
+}
+
 .Return_Button
 {
     position: fixed;

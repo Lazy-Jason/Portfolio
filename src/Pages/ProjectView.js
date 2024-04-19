@@ -7,6 +7,7 @@ import { PiKeyReturnFill } from "react-icons/pi"
 import ActionButton from '../Components/ActionButton'
 import TextField from '../Components/TextField'
 import "../Styles/ProjectView.css"
+import Carousel from '../Components/Carousel/Carousel'
 
 export default function ProjectView()
 {
@@ -32,8 +33,8 @@ export default function ProjectView()
                     <PiKeyReturnFill />
                 </div>
             </Tooltip>
-            <div className='Project_Conatiner' style ={{ backgroundImage: `url("${ProjectInfo.ProjectThumbnail}")` }}>
-                <div className='Project_Overlay'>
+            <div className='Project_Conatiner' >
+                <Carousel Images={[ProjectInfo.ProjectThumbnail]} />
                 <div className='Project_Content'>
                     <div className='Project_Content_Info'>
                         <h2>{ProjectInfo && ProjectInfo.ProjectTitle}</h2>
@@ -47,7 +48,6 @@ export default function ProjectView()
                         }
                     </div>
                     {ProjectInfo.ProjectExternalLink && <ActionButton Icon={<FaBinoculars />} Message={"Check Out"} FontSize={1.2} OnClicked={OpenExternalLink} Link = {ProjectInfo.ProjectExternalLink}/>}
-                </div>
                 </div>
             </div>
             <div className='ProjectInfo_Contents'>

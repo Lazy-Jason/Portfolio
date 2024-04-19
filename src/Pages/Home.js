@@ -96,7 +96,8 @@ export default function Home()
                 +' I aimed to recreate the intricate dodging mechanics and diverse attack patterns of the boss, including her distinctive ability to regenerate health after successfully landing hits on the player.'
                 +'Several elements were incorporated to emulate the intensity of a boss fight, such as an additional stage with unique spells wielded by the boss, the integration of mini cutscenes to depict the entrance'
                 +' and transition to the second stage of the battle, the introduction of Ash of War for the player, a combat combo system, and a leveling system.'
-                +'Despite the inclusion of these features, refining the boss further proved challenging, and I wasn\'t able to achieve the desired level of sophistication with additional attack animations and spell variations as much as I had envisioned.',
+                +
+                'Despite the inclusion of these features, refining the boss further proved challenging, and I wasn\'t able to achieve the desired level of sophistication with additional attack animations and spell variations as much as I had envisioned.',
                 TechnicalDetails: "",
                 Learnings: "",
                 FuturePlans: "",
