@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https//jasonG006.github.io/Portfolio/static/css/main.590c7d59.css",
-    "main.js": "/https//jasonG006.github.io/Portfolio/static/js/main.bb39d456.js",
-    "index.html": "/https//jasonG006.github.io/Portfolio/index.html",
-    "main.590c7d59.css.map": "/https//jasonG006.github.io/Portfolio/static/css/main.590c7d59.css.map",
-    "main.bb39d456.js.map": "/https//jasonG006.github.io/Portfolio/static/js/main.bb39d456.js.map"
+    "main.css": "/https//jasonG006.github.io/static/css/main.590c7d59.css",
+    "main.js": "/https//jasonG006.github.io/static/js/main.bb39d456.js",
+    "index.html": "/https//jasonG006.github.io/index.html",
+    "main.590c7d59.css.map": "/https//jasonG006.github.io/static/css/main.590c7d59.css.map",
+    "main.bb39d456.js.map": "/https//jasonG006.github.io/static/js/main.bb39d456.js.map"
   },
   "entrypoints": [
     "static/css/main.590c7d59.css",
