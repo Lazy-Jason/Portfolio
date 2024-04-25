@@ -13,11 +13,18 @@
     overflow: hidden;
 }
 
+.Carousel-Container .Project_Overlay
+{
+    position: absolute;
+    top: 0;
+}
+
 .Carousel-Image
 {
   width: 100%;
   display: block;
   object-fit: cover;
+  object-position: center;
   transition: translate 300ms ease-in-out;
 }
 

@@ -6,7 +6,7 @@ import ProjectViewTabs from './ProjectViewTabs'
 export default function ProjectField({Title, Projects = []})
 {
     const navigate = useNavigate()
-    const [currentViewIndex, setCurrentViewIndex] = React.useState(0)
+    const [currentViewIndex, setCurrentViewIndex] = React.useState(1)
 
     const HandleClicked = (Id) =>
     {

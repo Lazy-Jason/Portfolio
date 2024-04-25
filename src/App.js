@@ -12,6 +12,19 @@ function App()
           <Route path="/" element = {<Home/>} />
           <Route path="/ProjectView/:ProjectTitle" element = {<ProjectView/>} />
         </Routes>
+        <footer>
+          <h1>Footer</h1>
+          <div className='Footer-Content'>
+            <p>Copyright © {new Date().getFullYear()} Job Omondiale. All Rights Reserved.</p>
+            <div className='Footer-Right'>
+              <a href='https://www.instagram.com/not_Jasonx' target='blank'>Instgram</a>
+              <a href='https://www.linkedin.com/in/job-omondiale-2a04b4278/' target='blank'>LinkedIn</a>
+              <a href='https://github.com/jasonG006' target='blank'>GitHub</a>
+              <a href='https://lazy-studio.itch.io' target='blank'>itch.io</a>
+              <a href='mailto:huntingj4@gmail.com?' target='blank'>Email</a>
+            </div>
+          </div>
+        </footer>
       </div>
     </Router>
   )

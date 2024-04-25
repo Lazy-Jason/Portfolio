@@ -1,13 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Tooltip } from "@mui/material"
-import { FaBinoculars } from "react-icons/fa6"
 import { useLocation } from 'react-router-dom'
 import { PiKeyReturnFill } from "react-icons/pi"
-import ActionButton from '../Components/ActionButton'
 import TextField from '../Components/TextField'
 import "../Styles/ProjectView.css"
 import Carousel from '../Components/Carousel/Carousel'
+import ExternalWidget from '../Components/ExternalWidget/ExternalWidget'
 
 export default function ProjectView()
 {
@@ -20,11 +19,7 @@ export default function ProjectView()
     }
 
     const { ProjectInfo } = state
-
-    const OpenExternalLink = () =>
-    {
-        window.open(ProjectInfo.ProjectExternalLink, 'blank')
-    }
+    
 
     return (
         <div className='ProjectInfo_Container'>
@@ -34,7 +29,7 @@ export default function ProjectView()
                 </div>
             </Tooltip>
             <div className='Project_Conatiner' >
-                <Carousel Images={[ProjectInfo.ProjectThumbnail]} />
+                <Carousel Images={ProjectInfo.ProjectCarouselImages} />
                 <div className='Project_Content'>
                     <div className='Project_Content_Info'>
                         <h2>{ProjectInfo && ProjectInfo.ProjectTitle}</h2>
@@ -47,19 +42,28 @@ export default function ProjectView()
                             </div>
                         }
                     </div>
-                    {ProjectInfo.ProjectExternalLink && <ActionButton Icon={<FaBinoculars />} Message={"Check Out"} FontSize={1.2} OnClicked={OpenExternalLink} Link = {ProjectInfo.ProjectExternalLink}/>}
+                    {ProjectInfo.EmbedLink &&
+                    <>
+                        <ExternalWidget title={ProjectInfo.ProjectTitle} src={ProjectInfo.EmbedLink}/>
+                    </>
+                    }
                 </div>
             </div>
             <div className='ProjectInfo_Contents'>
-                {ProjectInfo.ProjectShowcaseVideo &&
-                    <div className='Content_Box'>
-                        <h1>Showcase Video</h1>
-                        <iframe title="Project Showcase Video" src={ProjectInfo.ProjectShowcaseVideo} frameBorder="0" allowFullScreen/>
-                    </div>
-                }
                 {ProjectInfo.ProjectOverview &&
                     <TextField Title={"Project Overview"} Message={ProjectInfo.ProjectOverview}/>
                 }
+                <div className='Content_Box'>
+                    {!ProjectInfo.ProjectShowcaseVideo?
+                    (
+                        <div className='Project-Showcase-Video-Skeleton'>
+                            <p> No Showcase Video</p>
+                        </div>
+                    ) :
+                    (
+                        <iframe title="Project Showcase Video" src={ProjectInfo.ProjectShowcaseVideo} frameBorder="0" allowFullScreen/>
+                    )}
+                </div>
                 {ProjectInfo.ProjectRole &&
                     <TextField Title={"My Role"} Message={ProjectInfo.ProjectRole}/>
                 }

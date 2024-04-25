@@ -39,7 +39,6 @@ export default function Dialogue({Options = [{}], Speaker =""})
     UpdateAnswerByQuestion(data[0])
   }
 
-  // onDataSelected={HandleOptionSelected}
   const HandleSubmittion = (e) =>
   {
     e.preventDefault()
@@ -56,7 +55,7 @@ export default function Dialogue({Options = [{}], Speaker =""})
         <div className='Dialogue-Box'>
           <h1 className='Dialogue-Speaker'>{Speaker || "No Speaker"}</h1>
           <div className='Dialogue-Content_Area'>
-            <ReactTyped ref={typeWriterRef} strings={[Answer || "Ask me something..."]} typeSpeed={30} backSpeed={30} loop={false}/>
+            <ReactTyped ref={typeWriterRef} strings={[Answer || "Pick a question to ask..."]} typeSpeed={10} backSpeed={30} loop={false}/>
             <form  onSubmit={HandleSubmittion} className='Dialogue-Pesponse-Box'>
               <DropDown getInputValue={(e) => setQuestion(e)} title={"Pick a queston"} children={Questions.length> 0 ? Questions : ["This is the default message if Options are not avaliable"]}/>
               <ActionButton Message={"Ask"} />

@@ -44,6 +44,8 @@ export default function Carousel({ Images = [null] })
         setIndex(Index)
     }
 
+    console.log(Images)
+
   return (
     <>
         {Images.length > 0 &&
@@ -58,6 +60,7 @@ export default function Carousel({ Images = [null] })
                         )
                     })}
                 </div>
+                <div className='Project_Overlay' />
                 <div className='Carousel-SliderContainer'>
                     {Images && Images.map((Element, NewIndex) =>
                     {

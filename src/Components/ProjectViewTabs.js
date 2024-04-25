@@ -6,7 +6,7 @@ import { PiRowsFill } from "react-icons/pi";
 
 export default function ProjectViewTabs({onTabSelected})
 {
-    const [currentViewIndex, setCurrentViewIndex] = useState(0)
+    const [currentViewIndex, setCurrentViewIndex] = useState(1)
 
     const ProjectViews = () =>
     {
