@@ -210,6 +210,7 @@ export default function Home()
           answer: "I enjoy helping users and learning new things!"
         }
     ]
+    
     return (
         <>
             <header>
@@ -248,7 +249,7 @@ export default function Home()
                                     <a href='#Contact'>Contact</a>
                                 </div>
                             </div>
-                            <img src='https://www.xtrafondos.com/wallpapers/goku-dragon-ball-super-ultra-instinct-10897.jpg' alt=''/>
+                            <img src='Hero_Profile_2.jpg' alt=''/>
                         </div>
                     </div>
                 </section>
