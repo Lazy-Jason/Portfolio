@@ -23,7 +23,7 @@ export default function Skill({SkillIcon, SkillName = "", SkillDescription = "",
                         return (
                         <Tooltip style={{backgroundColor: "red", fontSize: '20px'}} title={Icons.title} arrow> 
                             <div style={{width: "100%", height: "100%"}}>
-                                {<Icons.icon />}
+                                <Icons.icon />
                             </div>
                         </Tooltip>)
                     })

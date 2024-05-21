@@ -101,6 +101,21 @@ export default function Home()
                 "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY4Ni5wbmc=/original/Wl4l9T.png",
                 "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzcxMi5wbmc=/original/ShHH8S.png"
                 ],
+                ProjectMetaData:
+                {
+                    TeamCount: 1,
+                    Duration: "3 Months",
+                    TargetPlatform: "PC",
+                    Tools: 
+                    [{
+                        title: "Unreal Engine",
+                        // icon: SiUnrealengine
+                    },
+                    {
+                        title: "CPlus-Plus",
+                        // icon: SiCplusplus
+                    },]
+                },
                 ProjectTags: ["3d", "Souls-Like"],
                 ProjectShortDescription: "Miquella's End draws inspiration from the 2022 Game of the Year, Elden Ring, particularly focusing on the challenging boss fight featuring Malenia, Blade of Miquella.",
                 ProjectFullDescription: "",
@@ -125,7 +140,7 @@ export default function Home()
                 'health, damage, skills, stages, etc.).',
                 'Moreover, I have deepened my understanding of optimization techniques to enrich the user experience. While numerous approaches exist, incorporating a settings menu is indispensable, empowering users to personalize their experience to align with their preferences.'],
                 FuturePlans: "",
-                ProjectShowcaseVideo:"https://drive.google.com/file/d/1XJAyaX3MvbvMa8J6b7tPz6NUcPEgB7eW/preview",
+                ProjectShowcaseVideo:"https://www.youtube.com/embed/C7oMlhuw_5E?si=rG8DGHBIn-7joV3I",
                 ProjectExternalLink: "https://lazy-studio.itch.io/miquellas-end",
                 EmbedLink: "https://itch.io/embed/2554990?border_width=0&amp;bg_color=15161b&amp;fg_color=9d9aaa&amp;link_color=eb4848&amp;border_color=363636",
             },
@@ -136,6 +151,21 @@ export default function Home()
                 ["https://img.itch.zone/aW1hZ2UvMjA0OTQ4OS8xMjIzMDE2Ni5qcGc=/original/vFBSmT.jpg",
                 "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY1Ny5wbmc=/original/NWuqgo.png",
                 ],
+                ProjectMetaData:
+                {
+                    TeamCount: 7,
+                    Duration: "6 Months",
+                    TargetPlatform: "PC",
+                    Tools: 
+                    [{
+                        title: "Unity Engine",
+                        // icon: SiUnity,
+                    },
+                    {
+                        title: "CSharp",
+                        // icon: SiCsharp,
+                    }]
+                },
                 ProjectTags: ["2d", "Co-op", "Creepy", "Indie", "Pixel Art", "Puzzle", "Unity"],
                 ProjectShortDescription: "For my final project in the first year of university, 'Into the Gaol,' I assumed the lead programmer role, taking charge as the sole active programmer. My primary responsibilities included crafting movement controls, managing interactions, facilitating transitions between different time periods, and providing tools for designers to implement screen fading when the player encounters obstructive structures.",
                 ProjectFullDescription: "",
@@ -164,6 +194,17 @@ export default function Home()
             {
                 ProjectTitle: "The Halloween Shooter",
                 ProjectThumbnail: "https://img.itch.zone/aW1hZ2UvMTc3NTY4MS8xMDUxMzI5Ni5wbmc=/original/BtPNwf.png",
+                ProjectMetaData:
+                {
+                    TeamCount: 1,
+                    Duration: "1 Months",
+                    TargetPlatform: "PC",
+                    Tools: 
+                    [{
+                        title: "Unreal Engine",
+                        // icon: SiUnrealengine
+                    }]
+                },
                 ProjectTags: ["3d", "Halloween", "Creepy", "Indie", "Zombies", "UnrealEngine"],
                 ProjectShortDescription: "Crafting The Halloween Shooter as a personal challenge during the Halloween of 2022, I delved into unfamiliar territory, learning concepts such as Inheritance, AI, Progression Saving, Infinite Waves, and Menu Systems. The skills gained have since enriched my future projects.",
                 ProjectFullDescription: "",

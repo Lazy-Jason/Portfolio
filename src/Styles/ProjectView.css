@@ -53,13 +53,15 @@
 
 .ProjectInfo_Contents
 {
+    display: grid;
+    place-items: center;
     width: 100%;
     height: 100%;
 }
 
 .Content_Box
 {
-    padding: 20px;
+    width: 100%;
     color: var(--Primary-Text-Color);
 }
 
@@ -136,9 +138,46 @@
 
 .Project-External-Widget
 {
-    
+    justify-self: flex-end;
     width: 500px;
-    height: 130px;
     border-top-left-radius: 5px;
     pointer-events: all;
+    margin: 1rem;
+    color: var(--Primary-Text-Color);
+    padding: 1rem;
+    border: 2px solid var(--Primary-Outline-Color);
+    background-color: var(--Primary-Section-Color);
+}
+
+.Project-External-Widget .ActionButton,
+.Project-External-Widget h1
+{
+    margin: 0;
+}
+
+.Project_MetaData
+{
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid var(--Primary-Outline-Color);
+}
+
+.Meta_Container
+{
+    display: flex;
+    font-size: 1.2rem;
+    color: var(--Primary-Text-Color);
+}
+
+.Meta-Left
+{
+    width: 20%;
+    padding: 1rem;
+    background-color: var(--Primary-Section-Color);
+}
+.Meta-Right
+{
+    flex-grow: 1;
+    padding: 1rem;
 }

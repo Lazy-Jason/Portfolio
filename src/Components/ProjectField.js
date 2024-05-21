@@ -8,14 +8,13 @@ export default function ProjectField({Title, Projects = []})
     const navigate = useNavigate()
     const [currentViewIndex, setCurrentViewIndex] = React.useState(1)
 
-    const HandleClicked = (Id) =>
-    {
+    const HandleClicked = (Id) => 
+    { 
         navigate(`/ProjectView/${Projects[Id].ProjectTitle}`, {state: {ProjectInfo: Projects[Id]}})
-    }
+    } 
 
     const ProjectCollumView = () => 
     {
-        console.log("ProjectCollumView")
         return Projects && Projects.map((Element, Id) =>
         {
             return (<CollumView Key={Id} ProjectInfo={Element} Id={Id} OnProjectClicked={HandleClicked}/>)
@@ -24,7 +23,6 @@ export default function ProjectField({Title, Projects = []})
 
     const ProjectAlternativeView = () =>
     {
-        console.log("ProjectAlternativeView")
         return Projects && Projects.map((Element, Id) =>
         {
             return (<AlternativeView key={Id} ProjectInfo={Element} Id={Id} OnProjectClicked={HandleClicked}/>)
