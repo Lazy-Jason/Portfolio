@@ -1,0 +1,135 @@
+{
+    "Document":
+    [
+        {
+            "ProjectTitle": "MIQUELLA'S END",
+            "ProjectThumbnail": "https://img.itch.zone/aW1nLzE1MjA0MDMxLnBuZw==/original/agPKs6.png",
+            "ProjectCarouselImages":
+            ["https://img.itch.zone/aW1nLzE1MjA0MDMxLnBuZw==/original/agPKs6.png",
+            "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY1Ny5wbmc=/original/NWuqgo.png",
+            "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY3Ny5wbmc=/original/el1BA1.png",
+            "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY4MS5wbmc=/original/%2BYEy0B.png",
+            "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY4Ni5wbmc=/original/Wl4l9T.png",
+            "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzcxMi5wbmc=/original/ShHH8S.png"
+            ],
+            "ProjectMetaData":
+            {
+                "TeamCount": 1,
+                "Duration": "3 Months",
+                "TargetPlatform": "PC",
+                "Tools": 
+                [{
+                    "title": "Unreal Engine"
+                },
+                {
+                    "title": "CPlus-Plus"
+                }]
+            },
+            "ProjectTags": ["3d", "Souls-Like"],
+            "ProjectShortDescription": "Miquella's End draws inspiration from the 2022 Game of the Year, Elden Ring, particularly focusing on the challenging boss fight featuring Malenia, Blade of Miquella.",
+            "ProjectFullDescription": "",
+            "ProjectOverview": "Miquella's End draws inspiration from the 2022 Game of the Year, Elden Ring, particularly focusing on the challenging boss fight featuring Malenia, Blade of Miquella. In this project, I aimed to recreate the intricate dodging mechanics and diverse attack patterns of the boss, including her distinctive ability to regenerate health after successfully landing hits on the player. Several elements were incorporated to emulate the intensity of a boss fight, such as an additional stage with unique spells wielded by the boss, the integration of mini cutscenes to depict the entrance and transition to the second stage of the battle, the introduction of Ash of War for the player, a combat combo system, and a leveling system. Despite the inclusion of these features, refining the boss further proved challenging, and I wasn't able to achieve the desired level of sophistication with additional attack animations and spell variations as much as I had envisioned.",
+            "ProjectRole":
+            [
+                "In my role within the project, I took charge of the entire development process, focusing on functionalities such as a modular AI system. This system was designed to facilitate the seamless integration of additional AI elements to enhance the overall gameplay experience. While I wasn't able to implement multiple AI agents, the foundational framework was established for future utilization.",
+                "Leveraging my expertise, I successfully introduced a basic modular ability (skill) system. This system proved instrumental in realizing the diverse character progression within the game, including both player characters and boss entities for various stages. Notable skills encompassed the boss's abilities such as single ice stalagmites, multiple ice stalagmites, tornadoes, lightning strikes, among others. Importantly, these skills were designed for easy addition and removal without disrupting the underlying code structure.",
+                "I also ventured into optimization within Unreal Engine, as it was crucial to maintain a steady frame rate of 60fps, or around 35-40fps on the computers at the Game Academy within the university. Employing cost-effective techniques, such as disabling contact shadows on numerous lights and meticulously removing assets unseen by the player along their intended path to the boss, became essential. Additionally, I implemented strategies like generating LOD (Level of Detail) for all meshes used in the level to enhance performance. Among the most impactful solutions was minimizing the number of lights present in the scene and reducing their attenuation radius to prevent overlapping light sources. Furthermore, including a settings menu proved pivotal, recognizing that not all players could achieve optimal performance. This feature allowed users to customize various video and other settings to align with their system requirements."
+            ],
+            "TechnicalDetails": "",
+            "Learnings":
+            [
+                "During my involvement in this project, I have significantly enhanced my comprehension of AI agents and the creation of intricate, agnostic behavioral patterns applicable to various enemies. These patterns range from simple, individual tasks, effectively segmented to manage project complexity (e.g., roaming, attacking, navigation, dying, adjusting movement speed, target prioritization, etc.), to modular attribute states that impart common traits to diverse enemies/entities (e.g., health, damage, skills, stages, etc.).",
+                "Moreover, I have deepened my understanding of optimization techniques to enrich the user experience. While numerous approaches exist, incorporating a settings menu is indispensable, empowering users to personalize their experience to align with their preferences."
+            ],
+            "FuturePlans": "",
+            "ProjectShowcaseVideo": "https://www.youtube.com/embed/C7oMlhuw_5E?si=rG8DGHBIn-7joV3I",
+            "ProjectExternalLink": "https://lazy-studio.itch.io/miquellas-end",
+            "EmbedLink": "https://itch.io/embed/2554990?border_width=0&bg_color=15161b&fg_color=9d9aaa&link_color=eb4848&border_color=363636"
+        },
+        {
+            "ProjectTitle": "Into The Gaol",
+            "ProjectThumbnail": "https://img.itch.zone/aW1hZ2UvMjA0OTQ4OS8xMjIzMDE2Ni5qcGc=/original/vFBSmT.jpg",
+            "ProjectCarouselImages":
+            ["https://img.itch.zone/aW1hZ2UvMjA0OTQ4OS8xMjIzMDE2Ni5qcGc=/original/vFBSmT.jpg",
+            "https://img.itch.zone/aW1hZ2UvMjU1NDk5MC8xNTIwMzY1Ny5wbmc=/original/NWuqgo.png"
+            ],
+            "ProjectMetaData":
+            {
+                "TeamCount": 7,
+                "Duration": "6 Months",
+                "TargetPlatform": "PC",
+                "Tools": 
+                [{
+                    "title": "Unity Engine"
+                },
+                {
+                    "title": "CSharp"
+                }]
+            },
+            "ProjectTags": ["2d", "Co-op", "Creepy", "Indie", "Pixel Art", "Puzzle", "Unity"],
+            "ProjectShortDescription": "For my final project in the first year of university, 'Into the Gaol,' I assumed the lead programmer role, taking charge as the sole active programmer. My primary responsibilities included crafting movement controls, managing interactions, facilitating transitions between different time periods, and providing tools for designers to implement screen fading when the player encounters obstructive structures.",
+            "ProjectFullDescription": "",
+            "ProjectOverview": "Into The Gaol is an eerie 2-player co-op puzzle mystery based in Bodmin Jail. Together, uncover the past of the mysterious jail by jumping through time and talking to spirits to avoid a deadly fate",
+            "ProjectRole": 
+            [
+                "As the lead programmer, I held a pivotal role in guiding the project toward success. With sole responsibility as the active programmer, I focused on crafting essential components integral to the gameplay experience. This involved designing intricate movement controls tailored for a 2D isometric game, managing interactive elements, and orchestrating seamless transitions between different in-game time periods. Furthermore, I played a critical part in equipping the design team with tools necessary for integrating quest mechanics, player layering, and screen fading, all of which enhanced the overall player experience.",
+                "Navigating technical challenges proved enlightening throughout the project. Learning Unity C# amidst the complexity of a sizable project, devoid of additional programmers, posed an initial obstacle. I delved into co-op mechanics, strategizing the optimal structure for controls and individual character roles to contribute meaningfully to the overarching narrative, thereby ensuring a smooth and engaging multiplayer experience. Additionally, devising a method to track player progress between levels presented a significant challenge, leading to a deeper understanding of singletons (GameState/Game Manager) and their optimal utilization in making critical systems aware of vital data spanning multiple levels/scenes."
+            ],
+            "TechnicalDetails": "",
+            "Collaboration":
+            [
+                "The success of our project was contingent upon effective communication and collaboration, foundational pillars we consistently prioritized throughout our engagement. Our close partnership with designers and team members played a pivotal role in fostering a cohesive development environment. To facilitate this, we embraced agile methodology, conducting both in-person standup meetings and digital standups via Discord when physical attendance was impractical. GitHub served as our central repository, streamlining the organization and storage of project-related assets, underscoring our dedication to leveraging industry-standard tools.",
+                "Our workflow adhered to structured two-week sprints, during which we immersed ourselves in production activities. Following each sprint, we engaged in thorough discussions to evaluate our progress and pinpoint areas for enhancement. This iterative process enabled us to continually refine our approach and adapt to evolving project requirements.",
+                "Regular peer reviews were integral to our collaborative framework, offering a platform for constructive criticism aimed at refining both our individual and team-based skills. This practice fostered an environment of continuous improvement, ensuring that our collective expertise and capabilities evolved in tandem with the project's evolving demands."
+            ],
+            "Learnings": "",
+            "FuturePlans": "",
+            "ProjectShowcaseVideo":"",
+            "ProjectExternalLink": "https://intothegaol.itch.io/into-the-gaol",
+            "EmbedLink": "https://itch.io/embed/2049489?border_width=0&amp;bg_color=15161b&amp;fg_color=9d9aaa&amp;link_color=eb4848&amp;border_color=363636"
+        },
+        {
+            "ProjectTitle": "FrogWood",
+            "ProjectThumbnail": "https://img.itch.zone/aW1nLzE1NzAzNzQ0LnBuZw==/original/mhmO3e.png",
+            "ProjectCarouselImages":
+            ["https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5Mi5wbmc=/original/%2F%2BwnXo.png",
+            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5MS5wbmc=/original/ufdz%2FG.png",
+            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5My5wbmc=/original/10UvpJ.png",
+            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM4OS5wbmc=/original/7ygNhG.png",
+            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5MC5wbmc=/original/Di8lyW.png"
+            ],
+            "ProjectMetaData":
+            {
+                "TeamCount": 7,
+                "Duration": "6 Months",
+                "TargetPlatform": "PC",
+                "Tools": 
+                [{
+                    "title": "Unreal Engine"
+                },
+                {
+                    "title": "CPlus-Plus"
+                }]
+            },
+            "ProjectTags": ["3d", "Platformer", "Frog", "Indie", "Single-Player", "UnrealEngine"],
+            "ProjectShortDescription": "Frogwood is a 3D platformer in which you jump into the role of a frog and leap through a richly detailed world. You are tasked with restoring the stolen energy of your desiccated home in order to return it to life. In this short adventure by No Idea Productions, uncover the mysteries of the swamp as you hop, swim and jump across worlds.",
+            "ProjectFullDescription": "",
+            "ProjectOverview": "In Frogwood, you embody a tree frog whose serene swamp is drained of life. Tasked with restoring vitality, you traverse diverse realities, solving intricate puzzles to activate ancient portals. With each completed puzzle, life breathes anew into the once desolate swamp, offering a captivating journey through dimensional realms.",
+            "ProjectRole": 
+            ["As the sole programmer during this project, I handled all gameplay and UI implementations needed to enforce the progression of the game. This included implementing the characters' custom movement (Hop, Swimming, SuperJump, etc.) as well as adding all the Visual Effects (VFX) in the game. I tackled creating the game menu states, allowing players to continue and create saved games, as well as implementing an easy and scalable settings (options) screen for players to customize the game to their specified hardware, allowing more users to access the game.",
+            "Understanding the need to equip the designer with the right tools to better iterate during the development process, I leveraged Unreal Editor's Utility Asset Action Blueprint to make reusable tools. This allowed for a better workflow. I implemented features such as a way to override all materials of objects with a simple click, set the Level of Details (LODs) of assets, etc. Seeing the positive reception from the designer, I went back to the drawing board to implement an easier and more design-friendly way of creating objectives, which led me to implementing Game Actions.",
+            "Game Actions act as common, reusable blocks of code that can be called from anywhere. By exposing these actions to the editor, the designer can specify which action should be run when, for example, a door is opened. These actions could include playing a cinematic sequence, giving the player a new objective, launching the player to a new location, etc. This system can be easily expanded to allow designers and programmers to author actions right in the editor without having to write extra code, creating a more extensive library."
+            ],
+            "TechnicalDetails": "",
+            "Collaboration": "",
+            "Learnings":
+            [
+                "Throughout this project, I have come to appreciate the importance of optimization in games and how easy it is to take it for granted. As the project grew in complexity, it became increasingly challenging to optimize for lower-end devices. This project has made me aware of the need for better optimization practices, both in terms of code and asset optimization, to ensure a better experience for users across a range of hardware capabilities. Going forward, I am committed to understanding and implementing ways to optimize code and assets more effectively.",
+                "During this project, I developed a new found passion for writing tools that enable easier and quicker iteration within the development process. I plan to further explore the different ways Unreal Engine allows developers to extend the editor functionality, enriching the overall project experience and streamlining the workflow."
+            ],
+            "FuturePlans": "",
+            "ProjectShowcaseVideo":"https://www.youtube.com/embed/XcctUY12zaA?si=6b0d3VLL-vr1jarO",
+            "ProjectExternalLink": "https://no-idea-productions.itch.io/frogwood"
+        }
+    ]
+}

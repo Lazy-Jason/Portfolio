@@ -86,7 +86,7 @@ export default function ProjectView()
                 </div>
                 <div className='ProjectInfo_Contents'>
                     {ProjectInfo.ProjectOverview &&
-                        <TextField Title={"Project Overview"} Message={ProjectInfo.ProjectOverview}/>
+                        <TextField Title={"Project Overview"} Message={ProjectInfo.ProjectOverview.split("  ")}/>
                     }
                     <div className='Content_Box'>
                         {!ProjectInfo.ProjectShowcaseVideo?
@@ -103,7 +103,7 @@ export default function ProjectView()
                         <TextField Title={"My Role"} Message={ProjectInfo.ProjectRole}/>
                     }
                     {ProjectInfo.TechnicalDetails &&
-                        <TextField Title={"Technical Details"} Message={ProjectInfo.TechnicalDetails}/>
+                        <TextField Title={"Technical Details"} Message={ProjectInfo.TechnicalDetails.split("  ")}/>
                     }
                     {ProjectInfo.Collaboration &&
                         <TextField Title={"Collaboration"} Message={ProjectInfo.Collaboration}/>
@@ -112,7 +112,7 @@ export default function ProjectView()
                         <TextField Title={"Learnings"} Message={ProjectInfo.Learnings}/>
                     }
                     {ProjectInfo.FuturePlans &&
-                        <TextField Title={"Future Plans"} Message={ProjectInfo.FuturePlans}/>
+                        <TextField Title={"Future Plans"} Message={ProjectInfo.FuturePlans.split("  ")}/>
                     }
                 </div>
             </div>

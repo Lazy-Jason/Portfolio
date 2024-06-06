@@ -51,7 +51,7 @@ export default function Dialogue({Options = [{}], Speaker =""})
   
   return (
     <div className='Conversation-Wrapper'>
-        <img className='Avatar' src='/Dialogue-Template-Image.png' alt='dialogue Avatar' />
+        <img className='Avatar' src='Dialogue-Avatar.png' alt='dialogue Avatar' />
         <div className='Dialogue-Box'>
           <h1 className='Dialogue-Speaker'>{Speaker || "No Speaker"}</h1>
           <div className='Dialogue-Content_Area'>

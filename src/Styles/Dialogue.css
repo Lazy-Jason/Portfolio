@@ -16,10 +16,9 @@
 {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 400px;
-    height: 400px;
-    transform: translateY(-100px);
+    left: 5%;
+    width: 300px;
+    transform: translateY(-150px);
 }
 
 .Dialogue-Box
