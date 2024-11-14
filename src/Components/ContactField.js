@@ -3,6 +3,7 @@ import { FaPhoneAlt, FaLinkedin } from 'react-icons/fa'
 import { IoSend } from "react-icons/io5"
 import { AiFillInstagram } from "react-icons/ai"
 import { IoMail } from "react-icons/io5"
+import emailjs from '@emailjs/browser';
 import ActionButton from '../Components/ActionButton'
 
 export default function ContactField()
@@ -57,23 +58,46 @@ export default function ContactField()
 
     }
 
-    const HandleSend = (e) =>
+    const HandleSend = async (e) => 
     {
-        if(e)
+        if (!e) return;
+        e.preventDefault()
+
+        // if one of these fields isn't recorded then return
+        if (!form.Name || !form.Message || !form.Email) return;
+        try 
         {
-            e.preventDefault()
+            const templateParams =
+            {
+                from_name: form.Name,
+                from_email: form.Email,
+                message: form.Message,
+                to_email: 'huntingj4@gmail.com',
+            };
+
+            const response = await emailjs.send
+            (
+                'service_o4lxsyf',
+                'template_yyu2boj',
+                templateParams,
+                'ub57aHG4fCo2R1-YZ'
+            );
+
+            if (response.status === 200) 
+            {
+                setForm
+                ({
+                    Name: '',
+                    Email: '',
+                    Message: '',
+                });
+                alert('Message sent successfully!');
+            }
+        } 
+        catch (error) 
+        {
+            alert('Failed to send message. Please try again.');
         }
-
-        // if one of this field isn't recorded then return
-        if( !form.Name || !form.Message || !form.Email ) return
-
-
-        setForm
-        ({
-            Name: '',
-            Email: '',
-            Message: '',
-        })
     }
 
     return (

@@ -51,13 +51,13 @@ export default function Dialogue({Options = [{}], Speaker =""})
   
   return (
     <div className='Conversation-Wrapper'>
-        <img className='Avatar' src='Dialogue-Avatar.png' alt='dialogue Avatar' />
+        {/*<img className='Avatar' src='Dialogue-Avatar.png' alt='dialogue Avatar' />*/}
         <div className='Dialogue-Box'>
           <h1 className='Dialogue-Speaker'>{Speaker || "No Speaker"}</h1>
           <div className='Dialogue-Content_Area'>
             <ReactTyped ref={typeWriterRef} strings={[Answer || "Pick a question to ask..."]} typeSpeed={10} backSpeed={30} loop={false}/>
             <form  onSubmit={HandleSubmittion} className='Dialogue-Pesponse-Box'>
-              <DropDown getInputValue={(e) => setQuestion(e)} title={"Pick a queston"} children={Questions.length> 0 ? Questions : ["This is the default message if Options are not avaliable"]}/>
+              <DropDown getInputValue={(e) => setQuestion(e)} title={"Pick a question"} children={Questions.length> 0 ? Questions : ["This is the default message if Options are not avaliable"]}/>
               <ActionButton Message={"Ask"} />
             </form>
           </div>
