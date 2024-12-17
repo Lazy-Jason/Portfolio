@@ -109,18 +109,6 @@ export default function Home()
         ]
     }
 
-    const HandleDownloadCV = () =>
-    {
-        const fileName = 'Job Omondiale Resume.pdf';
-
-        const link = document.createElement('a');
-        link.href = '/Job-Omondiale(Game Dev)Resume-White.pdf';
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-    
     return (
         <>
             <header>
@@ -151,13 +139,13 @@ export default function Home()
                         <div className='Introduction'>
                             <div className='IntroText'>
                                 <h1>Hey there!</h1>
-                                <p>My name is <b>job Omondiale</b>, a game programmer with a deep love for all things gaming. 
+                                <p>My name is <b>job Omondiale</b>, a Gameplay | Tools programmer with a deep love for all things gaming.
                                 </p>
                                 <div className='Actions'>
-                                    <a target='blank' href='mailto:huntingj4@gmail.com?' subject='Hello'>
+                                    <a target='blank' href='mailto:huntingj4@gmail.com?'>
                                         <ActionIcon Icon={MdEmail} Message={'Email'} />
                                     </a>
-                                    <a target='blank' href='https://github.com/jasonG006'>
+                                    <a target='blank' href='https://github.com/Lazy-Jason'>
                                         <ActionIcon Icon={FaGithub} Message={'GitHub'} />
                                     </a>
                                     <a target='blank' href='https://www.linkedin.com/in/job-omondiale-2a04b4278/'>
@@ -168,7 +156,9 @@ export default function Home()
                                     </a>
                                 </div>
                                 <div className='Call-Actions'>
-                                    <ActionButton Icon={<MdDownloadForOffline />} Message={"CV"}  OnClicked={HandleDownloadCV}/>
+                                    <a href="/JobOmondiale(Game Dev)Resume.pdf" target="_blank">
+                                        <ActionButton Icon={<MdDownloadForOffline />} Message={"CV"}/>
+                                    </a>
                                     <a href='#Contact'>Contact</a>
                                 </div>
                             </div>

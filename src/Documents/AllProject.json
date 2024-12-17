@@ -2,6 +2,98 @@
     "Document":
     [
         {
+            "ProjectTitle": "SLIME LIFE",
+            "ProjectThumbnail": "https://img.itch.zone/aW1nLzE4MjAxNzEzLnBuZw==/original/XPgQOm.png",
+            "ProjectCarouselImages":
+            [
+                "https://img.itch.zone/aW1hZ2UvMjY4NTEwMi8xODIwMTUxMS5wbmc=/347x500/5IrbiM.png",
+                "https://img.itch.zone/aW1hZ2UvMjY4NTEwMi8xODIxOTIwOS5wbmc=/347x500/OcHB3S.png",
+                "https://img.itch.zone/aW1hZ2UvMjY4NTEwMi8xODIwMTUwOS5wbmc=/347x500/fdSzei.png"
+            ],
+            "ProjectMetaData":
+            {
+                "TeamCount": 10,
+                "Duration": "Currently in development",
+                "TargetPlatform": "PC",
+                "Tools":
+                [
+                    {
+                        "title": "Unreal Engine"
+                    },
+                    {
+                        "title": "Blueprints"
+                    },
+                    {
+                        "title": "CPlus-Plus"
+                    }
+                ]
+            },
+            "ProjectTags": ["3D", "Action", "Adventure", "Third-Person", "SinglePlayer"],
+            "ProjectShortDescription": "In a world where slimes fuel scientific breakthroughs, these versatile creatures have become essential to all aspects of life - from farming to medicine to construction. But as slimes evolved to fulfill their roles, they gained sentience and rebelled, driving humans into underground shelters.\n\nNow, with humanity on the brink of extinction, hope emerges in the form of a unique slime created by a brilliant alchemist. As this special slime, you must save the world",
+            "ProjectFullDescription": "",
+            "ProjectOverview": "In a world where slimes fuel scientific breakthroughs, these versatile creatures have become essential to all aspects of life - from farming to medicine to construction. But as slimes evolved to fulfill their roles, they gained sentience and rebelled, driving humans into underground shelters.\n\nNow, with humanity on the brink of extinction, hope emerges in the form of a unique slime created by a brilliant alchemist. As this special slime, you must save the world",
+            "ProjectRole":
+            [
+                "As the Lead Programmer, I architected and implemented the core gameplay framework, focusing on player skill systems, Enemy AI, and combat encounters. I designed an inheritance-based architecture that established shared functionality between player and AI systems, significantly reducing code redundancy and improving maintainability.",
+                "I developed several project-agnostic systems that enhanced development efficiency and designer accessibility:\n1) LazyGenericDynamicObjectPool: An efficient object pooling system for optimized resource management\n2) LazyGenericAsyncActions: A streamlined system for handling complex asynchronous operations\n3) LazyCharacterSettings: A centralized framework for managing character configurations\n4) LazyGenericGameActions: A modular system for implementing and managing game mechanics\n5) LazyNerveDialogue: An advanced dialogue management system supporting branching conversations\n6) LazyNerveQuest: A comprehensive quest tracking and management system",
+                "These systems were engineered with a plug-and-play architecture, requiring minimal setup while providing maximum flexibility. This approach significantly reduced development time for other programmers and provided designers with intuitive interfaces for system modifications. The implementation has become fundamental to the project's architecture, enabling rapid prototyping and efficient iteration on existing features."
+            ],
+            "TechnicalDetails": "",
+            "Learnings":
+            [
+                "Throughout this project, I significantly deepened my understanding of game architecture and system design. Creating project-agnostic systems taught me the importance of building flexible, maintainable frameworks that can adapt to changing requirements. The experience of developing the LazyGenericDynamicObjectPool and other core systems provided valuable insights into performance optimization and resource management in large-scale game development.",
+                "Leading the programming team enhanced my collaborative skills and taught me the importance of creating developer-friendly tools. The success of the systems I implemented, particularly the modular skill system and AI framework, demonstrated how well-designed tools can significantly accelerate development workflows and empower both programmers and designers to work more efficiently.",
+                "The project highlighted the critical balance between feature implementation and system maintainability. While building complex systems like the combat framework and AI behaviors, I learned to prioritize scalability and code reusability. This experience has shaped my approach to architecture design, emphasizing the importance of creating systems that are both powerful and accessible to other team members."
+            ],
+            "FuturePlans": "",
+            "ProjectShowcaseVideo": "https://www.youtube.com/embed/2yJ5IfpsnmA?si=eWKqvj5KavwqfqOY",
+            "ProjectExternalLink": "https://lazy-studio.itch.io/slime-life",
+            "EmbedLink": "https://itch.io/embed/2685102?border_width=0&bg_color=15161b&fg_color=9d9aaa&link_color=eb4848&border_color=363636"
+        },
+        {
+            "ProjectTitle": "FrogWood",
+            "ProjectThumbnail": "https://img.itch.zone/aW1nLzE1NzAzNzQ0LnBuZw==/original/mhmO3e.png",
+            "ProjectCarouselImages":
+            ["https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5Mi5wbmc=/original/%2F%2BwnXo.png",
+                "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5MS5wbmc=/original/ufdz%2FG.png",
+                "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5My5wbmc=/original/10UvpJ.png",
+                "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM4OS5wbmc=/original/7ygNhG.png",
+                "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5MC5wbmc=/original/Di8lyW.png"
+            ],
+            "ProjectMetaData":
+            {
+                "TeamCount": 7,
+                "Duration": "6 Months",
+                "TargetPlatform": "PC",
+                "Tools":
+                [{
+                    "title": "Unreal Engine"
+                },
+                    {
+                        "title": "CPlus-Plus"
+                    }]
+            },
+            "ProjectTags": ["3d", "Platformer", "Frog", "Indie", "Single-Player", "UnrealEngine"],
+            "ProjectShortDescription": "Frogwood is a 3D platformer in which you jump into the role of a frog and leap through a richly detailed world. You are tasked with restoring the stolen energy of your desiccated home in order to return it to life. In this short adventure by No Idea Productions, uncover the mysteries of the swamp as you hop, swim and jump across worlds.",
+            "ProjectFullDescription": "",
+            "ProjectOverview": "In Frogwood, you embody a tree frog whose serene swamp is drained of life. Tasked with restoring vitality, you traverse diverse realities, solving intricate puzzles to activate ancient portals. With each completed puzzle, life breathes anew into the once desolate swamp, offering a captivating journey through dimensional realms.",
+            "ProjectRole":
+            ["As the sole programmer during this project, I handled all gameplay and UI implementations needed to enforce the progression of the game. This included implementing the characters' custom movement (Hop, Swimming, SuperJump, etc.) as well as adding all the Visual Effects (VFX) in the game. I tackled creating the game menu states, allowing players to continue and create saved games, as well as implementing an easy and scalable settings (options) screen for players to customize the game to their specified hardware, allowing more users to access the game.",
+                "Understanding the need to equip the designer with the right tools to better iterate during the development process, I leveraged Unreal Editor's Utility Asset Action Blueprint to make reusable tools. This allowed for a better workflow. I implemented features such as a way to override all materials of objects with a simple click, set the Level of Details (LODs) of assets, etc. Seeing the positive reception from the designer, I went back to the drawing board to implement an easier and more design-friendly way of creating objectives, which led me to implementing Game Actions.",
+                "Game Actions act as common, reusable blocks of code that can be called from anywhere. By exposing these actions to the editor, the designer can specify which action should be run when, for example, a door is opened. These actions could include playing a cinematic sequence, giving the player a new objective, launching the player to a new location, etc. This system can be easily expanded to allow designers and programmers to author actions right in the editor without having to write extra code, creating a more extensive library."
+            ],
+            "TechnicalDetails": "",
+            "Collaboration": "",
+            "Learnings":
+            [
+                "Throughout this project, I have come to appreciate the importance of optimization in games and how easy it is to take it for granted. As the project grew in complexity, it became increasingly challenging to optimize for lower-end devices. This project has made me aware of the need for better optimization practices, both in terms of code and asset optimization, to ensure a better experience for users across a range of hardware capabilities. Going forward, I am committed to understanding and implementing ways to optimize code and assets more effectively.",
+                "During this project, I developed a new found passion for writing tools that enable easier and quicker iteration within the development process. I plan to further explore the different ways Unreal Engine allows developers to extend the editor functionality, enriching the overall project experience and streamlining the workflow."
+            ],
+            "FuturePlans": "",
+            "ProjectShowcaseVideo":"https://www.youtube.com/embed/XcctUY12zaA?si=6b0d3VLL-vr1jarO",
+            "ProjectExternalLink": "https://no-idea-productions.itch.io/frogwood"
+        },
+        {
             "ProjectTitle": "MIQUELLA'S END",
             "ProjectThumbnail": "https://img.itch.zone/aW1nLzE1MjA0MDMxLnBuZw==/original/agPKs6.png",
             "ProjectCarouselImages":
@@ -87,49 +179,6 @@
             "ProjectShowcaseVideo":"",
             "ProjectExternalLink": "https://intothegaol.itch.io/into-the-gaol",
             "EmbedLink": "https://itch.io/embed/2049489?border_width=0&amp;bg_color=15161b&amp;fg_color=9d9aaa&amp;link_color=eb4848&amp;border_color=363636"
-        },
-        {
-            "ProjectTitle": "FrogWood",
-            "ProjectThumbnail": "https://img.itch.zone/aW1nLzE1NzAzNzQ0LnBuZw==/original/mhmO3e.png",
-            "ProjectCarouselImages":
-            ["https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5Mi5wbmc=/original/%2F%2BwnXo.png",
-            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5MS5wbmc=/original/ufdz%2FG.png",
-            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5My5wbmc=/original/10UvpJ.png",
-            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM4OS5wbmc=/original/7ygNhG.png",
-            "https://img.itch.zone/aW1hZ2UvMjU3MTgyNS8xNTk5MzM5MC5wbmc=/original/Di8lyW.png"
-            ],
-            "ProjectMetaData":
-            {
-                "TeamCount": 7,
-                "Duration": "6 Months",
-                "TargetPlatform": "PC",
-                "Tools": 
-                [{
-                    "title": "Unreal Engine"
-                },
-                {
-                    "title": "CPlus-Plus"
-                }]
-            },
-            "ProjectTags": ["3d", "Platformer", "Frog", "Indie", "Single-Player", "UnrealEngine"],
-            "ProjectShortDescription": "Frogwood is a 3D platformer in which you jump into the role of a frog and leap through a richly detailed world. You are tasked with restoring the stolen energy of your desiccated home in order to return it to life. In this short adventure by No Idea Productions, uncover the mysteries of the swamp as you hop, swim and jump across worlds.",
-            "ProjectFullDescription": "",
-            "ProjectOverview": "In Frogwood, you embody a tree frog whose serene swamp is drained of life. Tasked with restoring vitality, you traverse diverse realities, solving intricate puzzles to activate ancient portals. With each completed puzzle, life breathes anew into the once desolate swamp, offering a captivating journey through dimensional realms.",
-            "ProjectRole": 
-            ["As the sole programmer during this project, I handled all gameplay and UI implementations needed to enforce the progression of the game. This included implementing the characters' custom movement (Hop, Swimming, SuperJump, etc.) as well as adding all the Visual Effects (VFX) in the game. I tackled creating the game menu states, allowing players to continue and create saved games, as well as implementing an easy and scalable settings (options) screen for players to customize the game to their specified hardware, allowing more users to access the game.",
-            "Understanding the need to equip the designer with the right tools to better iterate during the development process, I leveraged Unreal Editor's Utility Asset Action Blueprint to make reusable tools. This allowed for a better workflow. I implemented features such as a way to override all materials of objects with a simple click, set the Level of Details (LODs) of assets, etc. Seeing the positive reception from the designer, I went back to the drawing board to implement an easier and more design-friendly way of creating objectives, which led me to implementing Game Actions.",
-            "Game Actions act as common, reusable blocks of code that can be called from anywhere. By exposing these actions to the editor, the designer can specify which action should be run when, for example, a door is opened. These actions could include playing a cinematic sequence, giving the player a new objective, launching the player to a new location, etc. This system can be easily expanded to allow designers and programmers to author actions right in the editor without having to write extra code, creating a more extensive library."
-            ],
-            "TechnicalDetails": "",
-            "Collaboration": "",
-            "Learnings":
-            [
-                "Throughout this project, I have come to appreciate the importance of optimization in games and how easy it is to take it for granted. As the project grew in complexity, it became increasingly challenging to optimize for lower-end devices. This project has made me aware of the need for better optimization practices, both in terms of code and asset optimization, to ensure a better experience for users across a range of hardware capabilities. Going forward, I am committed to understanding and implementing ways to optimize code and assets more effectively.",
-                "During this project, I developed a new found passion for writing tools that enable easier and quicker iteration within the development process. I plan to further explore the different ways Unreal Engine allows developers to extend the editor functionality, enriching the overall project experience and streamlining the workflow."
-            ],
-            "FuturePlans": "",
-            "ProjectShowcaseVideo":"https://www.youtube.com/embed/XcctUY12zaA?si=6b0d3VLL-vr1jarO",
-            "ProjectExternalLink": "https://no-idea-productions.itch.io/frogwood"
         }
     ]
 }

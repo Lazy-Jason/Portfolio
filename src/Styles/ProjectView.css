@@ -80,8 +80,8 @@
 .All_Tags
 {
     display: grid;
-    place-items: center;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
     width: 100%;
     flex-grow: 1;
 }
@@ -138,8 +138,8 @@
 
 .Project-External-Widget
 {
+    width: 300px;
     justify-self: flex-end;
-    width: 500px;
     border-top-left-radius: 5px;
     pointer-events: all;
     margin: 1rem;
@@ -149,10 +149,16 @@
     background-color: var(--Primary-Section-Color);
 }
 
+.Project-External-Widget .ActionButton
+{
+    height: 40px;
+}
+
 .Project-External-Widget .ActionButton,
 .Project-External-Widget h1
 {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 .Project_MetaData

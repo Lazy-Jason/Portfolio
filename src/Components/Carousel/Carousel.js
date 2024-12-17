@@ -11,29 +11,34 @@ export default function Carousel({ Images = [null] })
         if(HandleImageChangeValidation())
         {
             setIndex( Index + 1 )
+            return
         }
+
+        setIndex(0)
     }
 
     const HandlePreviousImage = () =>
     {
-        if(HandleImageChangeValidation())
+        if(HandleImageChangeValidation(true))
         {
             setIndex( Index -1 < 0 ? Images.length -1 : Index - 1 )
+            return
         }
+
+        setIndex(Images.length - 1)
     }
 
-    const HandleImageChangeValidation = () =>
+    const HandleImageChangeValidation = (Previous) =>
     {
         const bAllowImageChange = Images.length > 1
-
         if( !bAllowImageChange ) return false
 
-        if( Index === Images.length-1 )
+        if(Previous)
         {
-            setIndex(0)
-            return false
+            return Index!== 0;
         }
-        return true
+        return Index !== Images.length - 1;
+
     }
 
     const HandleTransitionToIndex = (Index) =>
