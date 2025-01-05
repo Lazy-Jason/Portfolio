@@ -103,7 +103,7 @@ export default function ProjectView()
                         <TextField Title={"My Role"} Message={ProjectInfo.ProjectRole}/>
                     }
                     {ProjectInfo.TechnicalDetails &&
-                        <TextField Title={"Technical Details"} Message={ProjectInfo.TechnicalDetails.split("  ")}/>
+                        <TextField Title={"Technical Details"} Message={ProjectInfo.TechnicalDetails}/>
                     }
                     {ProjectInfo.Collaboration &&
                         <TextField Title={"Collaboration"} Message={ProjectInfo.Collaboration}/>
@@ -112,7 +112,7 @@ export default function ProjectView()
                         <TextField Title={"Learnings"} Message={ProjectInfo.Learnings}/>
                     }
                     {ProjectInfo.FuturePlans &&
-                        <TextField Title={"Future Plans"} Message={ProjectInfo.FuturePlans.split("  ")}/>
+                        <TextField Title={"Future Plans"} Message={ProjectInfo.FuturePlans}/>
                     }
                 </div>
             </div>

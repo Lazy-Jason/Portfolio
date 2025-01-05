@@ -139,6 +139,55 @@
             "EmbedLink": "https://itch.io/embed/2554990?border_width=0&bg_color=15161b&fg_color=9d9aaa&link_color=eb4848&border_color=363636"
         },
         {
+            "ProjectTitle": "LAZY NERVE QUEST",
+            "ProjectThumbnail": "https://i.ytimg.com/vi/QFBs3Fck9Lc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGE8gVShlMA8=&rs=AOn4CLA2L5rIm6Cz-5jKTjLWSEsMo2GgHA",
+            "ProjectCarouselImages":
+            [
+                "https://i.ytimg.com/vi/QFBs3Fck9Lc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGE8gVShlMA8=&rs=AOn4CLA2L5rIm6Cz-5jKTjLWSEsMo2GgHA"
+            ],
+            "ProjectMetaData":
+            {
+                "TeamCount": 1,
+                "Duration": "3 Months",
+                "TargetPlatform": "PC",
+                "Tools":
+                [
+                    { "title": "Unreal Engine" },
+                    { "title": "Blueprints" },
+                    { "title": "C++" }
+                ]
+            },
+            "ProjectTags": ["Unreal Engine", "Questing", "C++", "Game Development"],
+            "ProjectShortDescription": "A plugin that provides a pre-built questing backend system, designed to simplify the creation, tracking, and completion of quests within Unreal Engine.",
+            "ProjectFullDescription": "",
+            "ProjectOverview": "Lazy Nerve Quest offers developers an intuitive, user-friendly plugin for quest system management. It includes dynamic class recognition, customizable node styles, and an integrated quest codex UI for tracking quest statuses such as available, in-progress, and completed.",
+            "ProjectRole":
+            [
+                "Designed and implemented both runtime and editor modules to support quest functionality in Unreal Engine. Created dynamic graph nodes using Slate, ensuring consistency and usability across the quest editor. Developed a minimalistic editor interface to reduce complexity for designers and programmers. Integrated a quest tracking UI and codex screen to showcase real-time updates and manage quest progress."
+            ],
+            "TechnicalDetails":
+            [
+                "To showcase and enhance my C++ skills, I focused on creating a custom editor to support the questing system. The primary goal was to design a minimalistic editor that simplifies the process for designers and programmers, avoiding the need to navigate through complex Blueprints full of nodes and options. This approach ensures that only the essential features are accessible, reducing the risk of errors and improving usability across different user roles.",
+                "Through extensive research and leveraging limited resources such as Kirby561's tutorials on YouTube, I developed a comprehensive understanding of Unreal Engine’s editor and runtime modules. The editor module operates when the Unreal Engine editor is active, while the runtime module functions during Play-In-Editor (PIE) and in packaged builds. Using this knowledge, I first created a basic graph editor with manually configured nodes, then iteratively enhanced it to support dynamic recognition of both Blueprint and C++ classes.",
+                "The graph system allows nodes to act as shells, serving as connectors for Blueprint or C++ functionality. To improve the system, I implemented functionality to dynamically recognize user-created classes in both Blueprint and C++, ensuring that developers could easily integrate their custom logic into the questing framework. This required building a robust scanning and indexing mechanism that detects available classes in the project and reflects them dynamically in the editor.",
+                "Using Unreal Engine’s Slate framework, I designed custom node styles to enhance usability and maintain consistency. These styles replicate the aesthetics of Unreal Engine’s behavior tree nodes, making the system familiar and intuitive for developers. Nodes include customizable input and output pins that support various configurations, such as multi-output objectives or dependent conditions, enabling flexible quest flow setups.",
+                "A significant technical challenge was implementing functionality to scan and list available Blueprint and C++ classes for quest objectives and rewards dynamically. This involved using Unreal Engine’s asset management systems (`IAssetTools`) to register custom asset categories and ensure seamless organization. Custom asset actions were created to define specific behaviors for quest-related assets, such as objectives, rewards, and conditions.",
+                "The plugin also incorporates real-time visual feedback systems. For instance, objectives that involve traveling to specific locations render dynamic world markers, such as widgets or 3D pings, to guide the player. These markers are fully customizable, allowing developers to define appearance, acceptable offsets, and update rates. Additionally, debug visualization tools enable developers to preview quest behaviors directly within the editor, providing instant feedback during development.",
+                "Custom UI elements were implemented to streamline quest management. This includes a quest codex screen that organizes quests into categories like Available, In Progress, and Completed. The system also features a notification framework for displaying quest updates, such as when objectives are completed or rewards are granted. These elements were designed to enhance both developer and player experiences."
+            ],
+            "Collaboration": "",
+            "Learnings": "",
+            "FuturePlans":
+            [
+                "Fix existing bugs in the objective and reward creation systems.",
+                "Exposing unit conversion to developer settings that allows developers to define how Unreal Units (default centimeters) are translated into other measurement systems like meters, kilometers, or feet. This feature is particularly useful for designing quests where distances or sizes play a significant role.",
+                "Implement quest modifiers for more flexible and customizable gameplay experiences.",
+                "Enhance editor settings for style customization and introduce unit conversion tools to define relationships between Unreal Units and real-world measurements.",
+                "Polish the quest codex interface for improved user accessibility."
+            ],
+            "ProjectShowcaseVideo": "https://www.youtube.com/embed/QFBs3Fck9Lc?si=_0xAy7OdpEHyg_uf"
+        },
+        {
             "ProjectTitle": "Into The Gaol",
             "ProjectThumbnail": "https://img.itch.zone/aW1hZ2UvMjA0OTQ4OS8xMjIzMDE2Ni5qcGc=/original/vFBSmT.jpg",
             "ProjectCarouselImages":
